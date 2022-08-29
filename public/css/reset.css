@@ -1,0 +1,44 @@
+*{
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+:root{
+    --color-primary: rgb(203,86,22);
+    --color-secondary: rgb(254, 204, 22);
+    --color-underline: rgba(255, 94, 7, 0.849);
+    --color-text-primary: rgb(0,0,0);
+    --color-text-secondary: rgb(255, 255, 255);
+    --color-border: rgba(255, 255, 255, 0.426);
+    --color-mbl-menu: rgba(255, 255, 255, 0.375);
+    --color-underline: rgb(254, 204, 22);
+}
+
+.items{
+    list-style: none;
+}
+
+a{
+    text-decoration: none;
+    font-weight: 400;
+}
+
+main{
+    bottom: 0;
+    flex: 1;
+}
+
+body::-webkit-scrollbar{
+    width: 1px;
+
+    background: var(--color-primary) ;
+
+    border-radius: 20px;
+    border: 30px  var(--color-primary);
+}
+
+body::-webkit-scrollbar-thumb {
+    background-color: var(--color-primary);
+}

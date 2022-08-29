@@ -1,0 +1,464 @@
+.sec-quiz .container{
+display: flex;
+justify-content: center;
+align-items: center;
+position: absolute;
+top: 0; 
+bottom: 0;
+left: 0; 
+right: 0;
+margin: auto;
+}
+.card-register{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	box-shadow:  0.2rem 0.2rem 0.2rem 0.2rem rgba(77, 76, 76, 0.453);
+	padding: 10rem;
+	border-radius: 5rem;
+	background: blur(5px);
+	z-index: 1000;
+	background-color: rgba(253, 247, 247, 0.521);
+	flex-direction: column;
+}
+
+.card-register > img{
+	width: 10rem;
+	margin: 1rem auto;
+}
+
+.input-container{
+	position:relative;
+	margin-bottom:25px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+.input-container label{
+	position:absolute;
+	top:0px;
+	font-size:16px;
+	color: var(--color-primary);	
+	transition: all 0.5s ease-in-out;
+	
+}
+.input-container input{ 
+	text-align: center;
+	border:0;
+	border-bottom:1px solid var(--color-primary);  
+	background:transparent;
+	width:90%;
+	padding: 10px 0 5px 0;
+	font-size:16px;
+	color:rgb(0, 0, 0);
+}
+.input-container input:focus{ 
+	border:none;	
+	outline:none;
+	border-bottom:1px solid var(--color-secondary);	
+}
+
+.btn{
+	width: 200px;
+	padding: 8px 5px;
+	margin: 0.5rem;
+
+	display: flex;
+	justify-content: center;
+	text-decoration: none;
+	text-align: center;
+	
+	background: var(--color-primary);
+	color: white;
+	border: 0;
+	
+	border-radius: 5px;
+	
+	box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+	transition: 0.5s;
+
+	cursor: pointer;
+  }
+  
+  .btn:hover {
+	box-shadow: 0 10px 20px rgba(0, 0, 0, 0.6);
+	background: var(--color-secondary);
+	color: rgb(0, 0, 0);
+  }
+button{
+	color: white;
+	padding: 20px 20px 20px 20px;
+
+}
+
+.btnPoints{
+	width: 200px;
+	padding: 8px 5px;
+	margin: 0.5rem;
+
+	display: flex;
+	justify-content: center;
+	text-decoration: none;
+	text-align: center;
+	
+	background: var(--color-secondary);
+	color: rgb(0, 0, 0);
+	border: 0;
+	
+	border-radius: 5px;
+	
+	box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+	transition: 0.5s;
+
+	cursor: pointer;
+  }
+  
+  .btnPoints:hover {
+	box-shadow: 0 10px 20px rgba(0, 0, 0, 0.6);
+	background: var(--color-primary);
+	color: rgb(255, 255, 255);
+  }
+
+.input-container input:focus ~ label,
+.input-container input:valid ~ label{
+	top:-12px;
+	font-size:12px;
+	
+}
+.text-register{
+	font-size: 1.5rem;
+	margin: 0 0 1rem 0;
+	font-weight: 300;
+	color: var(--color-primary);
+}
+
+.bola01 {
+	background: var(--color-primary);
+	border-radius: 5rem;
+	width: 50px;
+	height: 50px;
+	position: absolute;
+	animation: move 2s infinite alternate ease-in-out;
+}
+
+.bola02 {
+	background: var(--color-secondary);
+	border-radius: 5rem;
+	width: 50px;
+
+	height: 50px;
+	animation: move2 2s infinite alternate ease-in-out; 
+}
+
+.bola03 {
+	background: var(--color-primary);
+	border-radius: 5rem;
+	width: 50px;
+	height: 50px;
+	display: flex;
+    flex-direction: column;
+	position: absolute;
+	right: 0;
+
+	animation: move3 2s infinite alternate ease-in-out;
+}
+
+.bola04 {
+	background: var(--color-secondary);
+	border-radius: 5rem;
+	width: 50px;
+	height: 50px;
+	right: 0;
+	position: absolute;
+
+
+
+	animation: move4 2s infinite alternate ease-in-out; 
+}
+
+.bola05 {
+	background: var(--color-primary);
+	border-radius: 5rem;
+	width: 50px;
+	height: 50px;
+	bottom: 3%;
+	position: absolute;
+	animation: move5 2s infinite alternate ease-in-out;
+}
+
+.bola06 {
+	background: var(--color-secondary);
+	border-radius: 5rem;
+	width: 50px;
+	height: 50px;
+	bottom: 3%;
+
+	position: absolute;
+
+	
+	animation: move6 2s infinite alternate ease-in-out; 
+}
+
+.bola07 {
+	background: var(--color-primary);
+	border-radius: 5rem;
+	width: 50px;
+	height: 50px;
+	bottom: 3%;
+	position: absolute;
+	right: 0%;
+	display: flex;
+	float: right;
+
+	animation: move7 2s infinite alternate ease-in-out;
+}
+
+.bola08 {
+	background: var(--color-secondary);
+	border-radius: 5rem;
+	width: 50px;
+	height: 50px;
+	float: right;
+	bottom: 3%;
+	position: absolute;
+	right: 0%;
+
+	animation: move8 2s infinite alternate ease-in-out; 
+}
+
+@keyframes move {
+	from {
+		transform: translate(10px, 100px);
+	}
+	to {
+		transform: translate(0);
+	}
+}
+
+@keyframes move2 { 
+	from { 
+		transform: translate(90px, 50px); 
+	} 
+	to { 
+		transform: translate(0px, 0px);
+	 } 
+}
+
+@keyframes move3 { 
+	from { 
+		transform: translate(-20px, 50px); 
+	} 
+	to { 
+		transform: translate(0px, -50px);
+	 } 
+}
+
+@keyframes move4 { 
+	from { 
+		transform: translate(-90px, 10px); 
+	} 
+	to { 
+		transform: translate(0px, -50px);
+	 } 
+}
+
+@keyframes move6 {
+	from {
+		transform: translate(0px, -100px);
+
+
+	}
+	to {
+		transform: translate(0px, 25px);
+	}
+}
+
+@keyframes move5 {
+	from {
+		transform: translate(100px, 0px);
+
+	}
+	to {
+		transform: translate(0px, 25px);
+
+	}
+}
+
+@keyframes move7 {
+	from {
+		transform: translate(0px, -100px);
+	}
+	to {
+		transform: translate(0px, 25px);
+	}
+}
+
+@keyframes move8 { 
+	from { 
+		transform: translate(-100px, -50px);
+	} 
+	to { 
+		transform: translate(0px, 25px); 
+
+	 } 
+}
+
+@keyframes move9 { 
+	from { 
+		transform: translate(0px, 300px); 
+
+
+	} 
+	to { 
+		transform: translate(0px, -50px);
+
+	 } 
+}
+
+
+@keyframes move10 { 
+	from { 
+		transform: translate(0px, -50px);
+	} 
+	to { 
+		transform: translate(0px, 300px); 
+
+	 } 
+}
+
+.bolão {
+	background: var(--color-primary);
+	border-radius: 5rem;
+	padding: 4rem;
+	animation: bigball 4s infinite alternate ease-in-out;
+}
+.bolão02 {
+	background: var(--color-secondary);
+	border-radius: 5rem;
+	padding: 4rem;
+
+	animation: bigball2 4s infinite alternate ease-in-out;
+}
+.bolão03 {
+	background: var(--color-primary);
+	border-radius: 5rem;
+	padding: 4rem;
+	animation: bigball3 4s infinite alternate ease-in-out;
+}
+.bolão04 {
+	background: var(--color-secondary);
+	border-radius: 5rem;
+	padding: 4rem;
+	animation: bigball4 4s infinite alternate ease-in-out;
+}
+
+@keyframes bigball { 
+	from { 
+		transform: translate(120px, -200px);
+	} 
+	to { 
+		transform: translate(0px, 200px); 
+
+	 } 
+}
+
+@keyframes bigball2 { 
+	from { 
+		transform: translate(-10px, 200px); 
+	} 
+	to { 
+		transform: translate(-130px, -190px);
+
+	 } 
+}
+
+@keyframes bigball3 { 
+	from { 
+		transform: translate(10px, 190px);
+	} 
+	to { 
+		transform: translate(140px, -200px); 
+
+	 } 
+}
+
+@keyframes bigball4 { 
+	from { 
+		transform: translate(-120px, -200px); 
+	} 
+	to { 
+		transform: translate(0px, 200px);
+
+	 } 
+}
+
+@media only screen and (max-width: 1100px){
+	.bola09 {
+
+		padding: 2rem;
+		margin: 10rem 8rem ;
+
+	}
+	
+	.bola10 {
+		padding: 2rem;
+		margin: 10rem 8rem ;
+	}
+	.bola11 {
+
+		padding: 2rem;
+		margin: 10rem 8rem ;
+
+	}
+	
+	.bola12 {
+		padding: 2rem;
+		margin: 10rem 8rem ;
+	}
+}
+@media only screen and (max-width: 950px){
+	.card-register{
+		padding: 7rem;
+		border-radius: 0px;
+		box-shadow: none;
+		z-index: -1;
+	}
+	.bolão{
+		padding: 2rem;
+	}
+	.bolão02{
+		padding: 2rem;
+	}
+	.bolão03{
+		padding: 2rem;
+	}
+	.bolão04{
+		padding: 2rem;
+	}
+
+}
+@media only screen and (max-width: 650px){
+
+	body{
+		overflow: hidden;
+	}
+	.card-register{
+		position: relative;
+		padding: 5rem;
+		margin: auto;
+		background-color: white;
+		margin: 5rem 0;
+		
+	}
+
+}
+
+@media only screen and (max-width: 400px){
+
+	.card-register{
+		padding: 2rem;
+		border-radius: 0px;
+		box-shadow: none;
+		z-index: -1;
+	}
+}

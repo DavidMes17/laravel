@@ -1,0 +1,423 @@
+  body{
+    overflow-x: hidden;
+  }
+
+  .favicon{
+    object-fit: contain;
+  }
+
+  .text-welcome{
+    padding: 3rem 1rem 0.8rem 4rem;
+    max-width: 50%;
+    letter-spacing: 0.1px;
+    text-align: justify;
+
+  }
+
+  .sec-welcomeOne .container{
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .text-welcome p{
+    font-size: 1.2rem;
+    
+  }
+
+  .animation{
+    padding: -3rem 0;
+    margin-right: 3rem;
+    position: inherit;
+
+    width: 450px;
+    height: 450px;
+  }
+
+  .sec-quiz{
+    margin: -2rem 5rem 2rem;
+
+    display: flex;
+    justify-content: right;
+    align-items: right;
+  }
+
+  .btn-quiz{
+    width: 400px;
+    padding: 8px 5px;
+    margin: 0.5rem;
+    
+    display: flex;
+    justify-content: center;
+    text-decoration: none;
+    text-align: center;
+    
+    background: var(--color-primary);
+    color: white;
+    
+    border-radius: 5px;
+    
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+    transition: 0.5s;
+  }
+
+  .btn-quiz:hover {
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.6);
+    background: var(--color-secondary);
+    color: rgb(255, 255, 255);
+  }
+  /*Card's*/
+
+  .card-title{
+    text-align: center;
+    margin-top: 5rem;
+    
+  }
+
+  body .container .card {
+    width: 300px;
+    height: 440px;
+
+    position: relative;
+    margin: 20px;
+
+    box-shadow: inset 5px 5px 5px rgba(0, 0, 0, 0.2),
+    inset -5px -5px 15px rgba(255, 255, 255, 0.1),
+    5px 5px 15px rgba(0, 0, 0, 0.3), 
+    -5px -5px 15px rgba(255, 255, 255, 0.1);
+
+    border-radius: 15px;
+    transition: 0.5s;    
+  } 
+    
+
+  .sec-welcometwo .container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+  }
+
+  body .container .card .box {
+    position: absolute;
+
+    top: 20px;
+    left: 15px;
+    right: 15px;
+    bottom: 20px;
+
+    background: var(--color-primary);
+    border-radius: 15px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    overflow: hidden;
+    transition: 0.5s;
+  }
+    
+  body .container .card .box:hover {
+    transform: translateY(-30px);
+  }
+    
+  body .container .card .box:before {
+    content: "";
+
+    position: absolute;
+    top: 0;
+    left: 0;
+
+    width: 50%;
+    height: 100%;
+
+    background: rgba(255, 255, 255, 0.03);
+  }
+    
+  body .container .card .box .content {
+    padding: 10px;
+    text-align: center;
+  }
+    
+  body .container .card .box .content h2 {
+    position: absolute;
+    top: -10px;
+    right: 80px;
+      
+    font-size: 8rem;
+    color: rgba(158, 154, 154, 0.144);
+  }
+    
+  body .container .card .box .content h3 {
+    font-size: 1.8rem;
+    color: #fff;
+    z-index: 1;
+    transition: 0.5s;
+    margin-bottom: 15px;   
+  }
+    
+  body .container .card .box .content p {
+    font-size: 0.9rem;
+    font-weight: 200;
+    color: #fff;
+    z-index: 1;
+    transition: 0.5s;
+    width: 80%;
+    margin:  0 auto;
+    text-align: justify;
+
+  }
+    
+  .cardP-img{
+    width: 150px;
+  }
+  /*Card's*/
+
+  .sec-welcomethree .content{
+    position: relative;
+    margin: -1.1rem 0px;
+    padding: 5rem 0px;
+    background-color: var(--color-primary);
+  }
+
+  .title-welcomethree{
+    font-size: 3rem;
+    color: white;
+    text-align: center;
+    margin: -5rem 0 1rem 0;
+  }
+
+  .Ecoenel{
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .text-Ecoenel{
+    color: white;
+    padding: 3rem 5rem 0.8rem 5rem;
+    text-align: justify;
+  }
+
+  .Ecoenel-img{
+    margin: 0 5rem;
+    border-radius: 5rem 0 5rem 0;
+    width: 35rem;
+  }
+
+
+
+  .prj2{
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .text-Ecocelpa{
+    color: white;
+    padding: 5rem 5rem 0rem 4rem;
+    text-align: justify;
+  }
+
+
+
+
+  .Ecocelpa{
+    margin: 5rem 0 0 5rem;
+    border-radius: 0 5rem 0 5rem;
+  }
+
+  .Ecocelpa{
+    width: 35rem;
+  }
+
+
+
+  .RecicleMais{
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .text-RecicleMais{
+    color: white;
+    padding: 5rem 1rem 0.8rem 5rem;
+    text-align: justify;
+    width: 80%;
+
+  }
+
+  .RecicleMais-img{
+    margin: 5rem 5rem;
+    border-radius: 5rem 0 5rem 0;
+    width: 60rem;
+  }
+
+  #linha-horizontal {
+    width: 100%;
+    margin: 20px auto;
+    border: 1px solid rgb(255, 255, 255);
+  }
+
+  /*Responsividade Welcome*/
+  @media only screen and (max-width: 1250px){
+    body .sec-welcometwo{
+      display: flex;
+      justify-content: center;
+    }
+
+      body .sec-welcometwo .container {
+        display: flex;
+        flex-flow: wrap;
+        width: 80%;
+      }
+  }
+
+  @media only screen and (max-width: 1150px){
+    .text-Ecoenel{
+      text-align: center;
+      padding: 1rem 2rem 1rem 2rem;
+    }
+    .Ecoenel {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-direction: column;
+    }
+    .Ecoenel-img{
+      width: 50%;
+    }
+
+  .text-Ecocelpa{
+    text-align: center;
+    padding: 1rem 2rem 1rem 2rem;
+  }
+
+  .prj2 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column-reverse;
+  }
+
+  .Ecocelpa{
+    margin: 0 auto;
+    align-items: center;
+    width: 50%;
+  }
+
+  .text-RecicleMais{
+    text-align: center;
+    padding: 1rem 2rem 1rem 2rem;
+  }
+  .RecicleMais {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+  }
+  .RecicleMais-img{
+    width: 50%;
+  }
+  }
+
+  @media only screen and (max-width: 1050px){
+    .sec-welcomeOne .container{
+      flex-direction: column;
+      align-items: center;    
+  }
+
+    .text-welcome{
+      max-width: 90%;
+      text-align: center;
+      margin-left: 1px;
+    }
+
+    .sec-quiz {
+      width: 100%;
+      margin: 3rem 0rem;
+      display: flex;
+      justify-content: center;
+      align-items: center; 
+    }
+  }
+
+  @media only screen and (max-width:950px){
+      .text-welcome{
+        padding: 3rem 0.5rem 0rem 0.5rem;
+        max-width: 95%;
+      }
+
+      .animation{
+        margin-right: 1rem;
+      }
+  }
+
+  @media only screen and (max-width: 830px){
+    .animation{
+      margin-right: 1rem;   
+    }
+    .title-welcomethree{
+      display: none;
+    }
+    .sec-welcomethree .content:before{
+      content: ' Conheça Sobre nossos projetos';
+      color: white;
+      align-items: center;
+      text-align: center;
+      font-size: 2rem;
+      font-weight: 600;
+      margin: -5rem 0 5rem 0;
+      display: flex;
+      justify-content: center;
+
+    }
+  }
+
+  @media only screen and (max-width: 600px){ 
+
+    .Ecoenel-img{
+      width: 80%;
+    }
+    
+    .Ecocelpa{
+      width: 80%;
+    }
+    .RecicleMais-img{
+      width: 80%;
+    }
+  }
+  @media only screen and (max-width: 550px){ 
+    .text-welcome{
+      max-width: 100%;
+      padding: 1rem;
+      text-align: center;
+    }
+  }
+
+  @media only screen and (max-width: 435px){ 
+    .animation{
+      width: 350px;
+      margin-left: 1rem;
+    }
+  }
+
+  @media only screen and (max-width: 335px){ 
+    .animation{
+      width: 300px;
+      margin-left: 1rem;
+    }
+  }
+
+  @media only screen and (max-width: 350px){ 
+    .text-welcome h1{
+      padding: 1rem 0 1rem 0;
+    }
+  
+    .text-welcome{
+      padding: 0rem 0 2rem 0;
+    }
+  }
+
+  @media only screen and (max-width: 300px){ 
+    .animation{
+      display: none;
+
+    }
+  }
