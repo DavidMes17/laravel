@@ -1,6 +1,6 @@
 let instrucoes = document.querySelector('#instrucoes')
 let aviso = document.querySelector('#aviso')
-let pontos = 0 // pontos para o placar
+var pontos = 0 // pontos para o placar
 let placar = 0 // placar
 
 // PERGUNTA
@@ -225,6 +225,7 @@ function fimDoJogo() {
     c.setAttribute('value', '0')
     d.setAttribute('value', '0')
 
+
     // OCULTAR O ARTICLE DA QUESTAO
     articleQuestoes.style.display = 'none'
 
@@ -250,4 +251,5 @@ function fimDoJogo() {
         }
     }, 1000)
 }
-console.log(pontos)
+
+document.cookie = "cook = pontos; path = /salvar;".toString();

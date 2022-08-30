@@ -29,7 +29,7 @@
         
         <div class="card-register">
             
-            <img src="/assets/3e-logo-color.png" alt="">
+            <img src="/assets/3e-logo-color.png">
             <h2 class="text-register">Está pronto para começar?</h2>
                 <div class="box">
                     <form action="/question" method="POST">

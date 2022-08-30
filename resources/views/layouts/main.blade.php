@@ -10,10 +10,10 @@
         <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500&display=swap" rel="stylesheet">
         <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
         
-        <link rel="stylesheet" href="./css/reset.css">
-        <link rel="stylesheet" href="./css/static.css">
-        <link rel="stylesheet" href="./css/welcome.css">
-        <link rel="stylesheet" href="./css/about.css">
+        <link rel="stylesheet" href="css/reset.css">
+        <link rel="stylesheet" href="css/static.css">
+        <link rel="stylesheet" href="css/welcome.css">
+        <link rel="stylesheet" href="css/about.css">
 
         <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
 
@@ -24,7 +24,7 @@
         <header class="sec-start">
             <div class="container">
                 <nav class="menu" id="nav">
-                    <img src="/assets/logo3e.png" class="logo-3e" alt="">
+                    <a href="/"><img src="/assets/logo3e.png" class="logo-3e" alt=""></a>
                     
                     <button id="btn-mobile"> <span id="icon-menu"></span> </button>
                     <ul class="items" role="menu">
