@@ -232,8 +232,8 @@ function fimDoJogo() {
     setTimeout(function() {
 
         if(pontos < 50){
-        window.location.href = "/TryAgain"
-            
+            window.location.href = "/ponto"
+
 
         }
         else if(pontos >= 50 < 90){
@@ -252,4 +252,4 @@ function fimDoJogo() {
     }, 1000)
 }
 
-document.cookie = "cook = pontos; path = /salvar;".toString();
+document.cookie = "cook = pontos; path = /salvar;".toString()

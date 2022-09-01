@@ -14,12 +14,13 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/salvar', [RankController::class, 'salvar']);
+Route::get('/salvar', [RankController::class, 'SalvarNome']);
 Route::get('/question', [RankController::class, 'quest']);
-Route::post('/question', [RankController::class, 'salvar']);
+Route::post('/question', [RankController::class, 'SalvarNome']);
 Route::get('/score', [RankController::class, 'mural']);
 Route::get('/Quiz3E', [RankController::class, 'perfil']);
 Route::get('/TryAgain', [RankController::class, 'ta']);
+Route::post('/TryAgain', [RankController::class, 'SalvarPontos']);
 
 Route::post('/criar_conta', [RankController::class, 'salvar']);
 Route::get('/criar_conta', [RankController::class, 'aparecer']);

@@ -56,6 +56,8 @@
     <div class="bola08"></div>
 
 </body>
-<script src="/js/quiz.js" defer></script>
+<script src="/js/quiz.js" defer>
+    document.cookie = "point = pontos; path = /;"
+</script>
 
 </html>

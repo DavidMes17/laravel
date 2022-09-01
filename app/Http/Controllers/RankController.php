@@ -5,6 +5,7 @@ namespace App\Http\Controllers;
 use App\Models\Rank;
 use Illuminate\Http\Request;
 use Illuminate\Support\Collection;
+use Symfony\Component\HttpFoundation\Cookie;
 
 use function PHPSTORM_META\map;
 
@@ -26,15 +27,20 @@ class RankController extends Controller
         return view('question');
     }
 
-    public function salvar(Request $request){
+    public function SalvarNome(Request $request){
         $ranks = new rank;
 
-        $cook = $_COOKIE;
         $ranks->nome = $request->nome;
-        $ranks->pontos = $request->$cook;
 
         $ranks->save();
         return redirect('/question');
+    }
+
+    public function SalvarPontos(Request $request){
+        $ranks = new rank;
+        $ranks->pontos = $request->pontos;
+        $ranks->save();
+        return redirect('/');
     }
 
     public function mural(){
