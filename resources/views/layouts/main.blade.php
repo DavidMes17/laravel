@@ -29,7 +29,7 @@
                     <button id="btn-mobile"> <span id="icon-menu"></span> </button>
                     <ul class="items" role="menu">
                     <li><a href="/">Inicio</a></li>
-                        <li><a href="#Descarte">Descarte</a></li>
+                        <li><a href="#pontos">Descarte</a></li>
                         <li><a href="#Nossos_Projetos">Nossos Projetos</a></li>
                         <li><a href="/Sobre">Sobre</a></li>
                     </ul>

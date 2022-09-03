@@ -1,6 +1,7 @@
 let instrucoes = document.querySelector('#instrucoes')
 let aviso = document.querySelector('#aviso')
 var pontos = 0 // pontos para o placar
+
 let placar = 0 // placar
 
 // PERGUNTA
@@ -229,11 +230,14 @@ function fimDoJogo() {
     // OCULTAR O ARTICLE DA QUESTAO
     articleQuestoes.style.display = 'none'
 
+
+
     setTimeout(function() {
 
         if(pontos < 50){
-        window.location.href = "/TryAgain"
-            
+            document.cookie = "cook" + "=" + pontos + ";" + "path" + "=" + "/pontos" + ";"
+        window.location.href = "/pontos"
+
 
         }
         else if(pontos >= 50 < 90){
@@ -250,6 +254,24 @@ function fimDoJogo() {
 
         }
     }, 1000)
-}
 
-document.cookie = "cook = pontos; path = /salvar;".toString();
+    function getCookie(pontos) {
+        let name = pontos + "=";
+        let decodedCookie = decodeURIComponent(document.cookie);
+        let ca = decodedCookie.split(';');
+        for(let i = 0; i <ca.length; i++) {
+          let c = ca[i];
+          while (c.charAt(0) == ' ') {
+            c = c.substring(1);
+          }
+          if (c.indexOf(name) == 0) {
+            return c.substring(name.length, c.length);
+          }
+        }
+        return "";
+      }
+
+
+
+
+}

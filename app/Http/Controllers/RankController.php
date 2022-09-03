@@ -29,13 +29,21 @@ class RankController extends Controller
     public function salvar(Request $request){
         $ranks = new rank;
 
-        $cook = $_COOKIE;
         $ranks->nome = $request->nome;
-        $ranks->pontos = $request->$cook;
 
         $ranks->save();
         return redirect('/question');
     }
+
+public function salva(Request $request){
+    $ranks = new rank;
+
+    $ranks->pontos = $request->string($_COOKIE["cook"]);
+            $ranks->get();
+        $ranks->save();
+
+            return redirect('/TryAgain');
+}
 
     public function mural(){
 

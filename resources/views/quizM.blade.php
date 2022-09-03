@@ -32,10 +32,10 @@
             <img src="/assets/3e-logo-color.png">
             <h2 class="text-register">Está pronto para começar?</h2>
                 <div class="box">
-                    <form action="/question" method="POST">
+                    <form autocomplete="off" action="/question" method="POST">
         @csrf
 	                    <div class="input-container">
-                            <input  type="text" id="name" name="nome" required="" />
+                            <input  type="text" id="name" name="nome" required=""/>
                             
 		                     <label>Digite seu nome</label>
 	                    </div>

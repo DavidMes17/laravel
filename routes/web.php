@@ -20,8 +20,11 @@ Route::post('/question', [RankController::class, 'salvar']);
 Route::get('/score', [RankController::class, 'mural']);
 Route::get('/Quiz3E', [RankController::class, 'perfil']);
 Route::get('/TryAgain', [RankController::class, 'ta']);
+Route::get('/pontos', [RankController::class, 'salva']);
+Route::get('/pontos', [RankController::class, 'salva']);
 
-Route::post('/criar_conta', [RankController::class, 'salvar']);
+Route::post('/criar_conta', [RankController::class, 'salva']);
 Route::get('/criar_conta', [RankController::class, 'aparecer']);
+Route::get('/teste', function () {return view('teste');});
 
 Route::get('/', [RankController::class, 'index']);
