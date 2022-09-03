@@ -23,7 +23,9 @@
             
             <header class='questao'>
             <img class="Logo" src="assets/3e-logo-color.png" alt="" srcset="">
-            <article id='aviso' class="questions" >Questão <span id='numero'></span>/<span id='total'></span></article>
+            <article id='aviso' class="questions" >
+                Questão <span id='numero'></span>/<span id='total'></span>
+            </article>
             <span id='numQuestao'></span>
             <h2 id='pergunta'></h2>
         </header>
@@ -50,7 +52,7 @@
 </section>
 
 </main>
-
+ $cok = setcookie('$_COOKIE');
 </body>
 <script src="./js/question.js"></script>
 </html>

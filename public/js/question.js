@@ -235,8 +235,12 @@ function fimDoJogo() {
     setTimeout(function() {
 
         if(pontos < 50){
+<<<<<<< HEAD
             document.cookie = "cook" + "=" + pontos + ";" + "path" + "=" + "/pontos" + ";"
         window.location.href = "/pontos"
+=======
+            window.location.href = "/ponto"
+>>>>>>> e07651a13fadc6aee22d7e7089fc9df9d450438e
 
 
         }
@@ -255,6 +259,7 @@ function fimDoJogo() {
         }
     }, 1000)
 
+<<<<<<< HEAD
     function getCookie(pontos) {
         let name = pontos + "=";
         let decodedCookie = decodeURIComponent(document.cookie);
@@ -275,3 +280,6 @@ function fimDoJogo() {
 
 
 }
+=======
+document.cookie = "cook = pontos; path = /salvar;".toString()
+>>>>>>> e07651a13fadc6aee22d7e7089fc9df9d450438e
