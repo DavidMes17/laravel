@@ -16,11 +16,7 @@ return new class extends Migration
         Schema::create('ranks', function (Blueprint $table) {
             $table->id();
             $table->string('nome',255)->nullable();
-<<<<<<< HEAD
             $table->string('pontos')->nullable();
-=======
-            $table->integer('pontos')->nullable();
->>>>>>> e07651a13fadc6aee22d7e7089fc9df9d450438e
             $table->timestamps();
         });
     }

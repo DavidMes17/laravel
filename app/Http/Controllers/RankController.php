@@ -36,7 +36,6 @@ class RankController extends Controller
         return redirect('/question');
     }
 
-<<<<<<< HEAD
 public function salva(Request $request){
     $ranks = new rank;
 
@@ -46,14 +45,6 @@ public function salva(Request $request){
 
             return redirect('/TryAgain');
 }
-=======
-    public function SalvarPontos(Request $request){
-        $ranks = new rank;
-        $ranks->pontos = $request->pontos;
-        $ranks->save();
-        return redirect('/');
-    }
->>>>>>> e07651a13fadc6aee22d7e7089fc9df9d450438e
 
     public function mural(){
 
