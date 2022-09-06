@@ -234,7 +234,7 @@ function fimDoJogo() {
 
         if(pontos < 50){
 
-    document.cookie = "cook" + "=" + pontos + ";".toString();
+    document.cookie = "cookie" + "=" + pontos + "; path: /pontos;".toString();
             window.location.href = "/pontos"
 
         }
@@ -248,7 +248,6 @@ function fimDoJogo() {
         }
         else{
             window.location.href = "/"
-
 
         }
     }, 1000)

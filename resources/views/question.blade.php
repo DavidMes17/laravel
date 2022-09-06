@@ -22,21 +22,22 @@
         <article class='questoes'>
             
             <header class='questao'>
-            <img class="Logo" src="assets/3e-logo-color.png" alt="" srcset="">
-            <article id='aviso' class="questions" >
-                Questão <span id='numero'></span>/<span id='total'></span>
+            <img style="-webkit-user-select: none;" class="Logo" src="assets/3e-logo-color.png" alt="" srcset="">
+            <article style="-webkit-user-select: none;" id='aviso' class="questions" >
+                Questão <span style="-webkit-user-select: none;" id='numero'></span>/<span style="-webkit-user-select: none;" id='total'></span>
             </article>
-            <span id='numQuestao'></span>
-            <h2 id='pergunta'></h2>
+            <span style="-webkit-user-select: none;" id='numQuestao'></span>
+            <h2 style="-webkit-user-select: none;" id='pergunta'></h2>
         </header>
         
         <div class = "vertical"></div>
 
         <div class='choices'>
-        <article class='points' id='instrucoes'>
+        <article style="-webkit-user-select: none;" class='points' id='instrucoes'>
         Pontos 0
     </article>
-            <ol type='A' id='alternativas'>
+            <ol style="-webkit-user-select: none;" type='A' id='alternativas'>
+                <ol type='A' id='alternativas'>
                 <li id='a' value='1A' class='respostas correcao' onClick='verificarSeAcertou(this, this)'></li>
                 <li id='b' value='1B' class='respostas' onClick='verificarSeAcertou(this, this)'></li>
                 <li id='c' value='1C' class='respostas' onClick='verificarSeAcertou(this, this)'></li>
@@ -51,8 +52,7 @@
 </svg>
 </section>
 
-</main>
- $cok = setcookie('$_COOKIE');
-</body>
+</main></body>
+<script src="https://code.jquery.com/jquery-3.6.1.js"></script>
 <script src="./js/question.js"></script>
 </html>

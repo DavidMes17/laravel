@@ -10,7 +10,6 @@
 
     <link rel="stylesheet" href="./css/registerQuiz.css">
 
-
     <title>Registro</title>
 </head>
 <body>
@@ -19,7 +18,6 @@
 
 <div class="bola03"></div>
 <div class="bola04"></div>
-
 
 <section class="sec-quiz">
     <div class="container">
@@ -57,8 +55,6 @@
     <div class="bola08"></div>
 
 </body>
-<script src="/js/quiz.js" defer>
-    document.cookie = "point = pontos; path = /;"
-</script>
+<script src="/js/quiz.js" defer></script>
 
 </html>

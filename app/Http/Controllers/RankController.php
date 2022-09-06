@@ -2,11 +2,10 @@
 
 namespace App\Http\Controllers;
 
+use Illuminate\Support\Facades\Cookie;
 use App\Models\Rank;
 use Illuminate\Http\Request;
 use Illuminate\Support\Collection;
-use Symfony\Component\HttpFoundation\Cookie;
-
 use function PHPSTORM_META\map;
 
 class RankController extends Controller
@@ -39,8 +38,9 @@ class RankController extends Controller
 public function salva(Request $request){
     $ranks = new rank;
 
-    $ranks->pontos = $request->cookie('pontos');
-            $ranks->get();
+    $cookie = "<script>document.write()</script>";
+
+    $ranks->pontos = $request->cookie($value);
         $ranks->save();
             return redirect('/TryAgain');
 }
