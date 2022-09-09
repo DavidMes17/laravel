@@ -37,11 +37,8 @@ class RankController extends Controller
 
 public function salva(Request $request){
     $ranks = new rank;
-
-
-    $cookie = json_encode($_COOKIE['cookie']);
     
-    $ranks->pontos = $cookie;
+    $ranks->pontos = json_encode($_COOKIE['cookie']);
         $ranks->save();
             return redirect('/TryAgain');
 }
