@@ -1,6 +1,6 @@
 let instrucoes = document.querySelector('#instrucoes')
 let aviso = document.querySelector('#aviso')
-var pontos = 0 // pontos para o placar
+let pontos = 0 // pontos para o placar
 
 let placar = 0 // placar
 
@@ -234,11 +234,12 @@ function fimDoJogo() {
 
         if(pontos < 50){
 
-    document.cookie = "cookie" + "=" + pontos + "; path: /pontos;".toString();
+    document.cookie = "cookie" + "=" + pontos + "; path: /;"
             window.location.href = "/pontos"
 
         }
         else if(pontos >= 50 < 90){
+            document.cookie = "cookie" + "=" + pontos + "; path: /;"
             window.location.href = "/TryAgain"
 
         }

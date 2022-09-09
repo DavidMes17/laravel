@@ -38,7 +38,7 @@
 		                     <label>Digite seu nome</label>
 	                    </div>
                         <input class="btn" id="btnSubmit" type="submit" value="Começar">
-    <input type="hidden" id="btnClickedValue" name="btnClickedValue" value="pontos" />
+    <input type="hidden" id="btnClickedValue" name="btnClickedValue" value="pontos"/>
                         <button class="btnPoints" id="btnSubmit" onclick="ForTo(event)">Pontuação</button>
                     </form>
                 </div>
